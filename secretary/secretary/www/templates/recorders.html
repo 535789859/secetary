@@ -1,0 +1,74 @@
+<ion-view title="记录">
+  <ion-nav-buttons side="right" >
+    <a class="button button-icon icon ion-edit" href="#/tabs/recordersList/001"></a>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <ion-refresher
+      pulling-text="正在刷新..."
+      on-refresh="reload()">
+    </ion-refresher>
+
+    <!--<div class="list list-inset">-->
+      <!--<a href="#" class="item item-thumbnail-left">-->
+       <!--<span class="circle-blue"></span>-->
+        <!--<h1 class="meeting">教学会议</h1>-->
+        <!--<h2>会议的详细内容</h2>-->
+      <!--</a>-->
+       <!--<span class="Mark"><button class="stateMark">完</button>-->
+      <!--<h3>优才学院 2017-03-21 08：33</h3></span>-->
+
+    <!--</div>-->
+    <!--<div class="list list-inset">-->
+      <!--<a href="#" class="item item-thumbnail-left">-->
+        <!--<span class="circle-blue"></span>-->
+        <!--<h1 class="meeting">教学会议</h1>-->
+        <!--<h2>会议的详细内容</h2>-->
+      <!--</a>-->
+      <!--<span class="Mark"><button class="stateMark">完</button>-->
+      <!--<h3>优才学院 2017-03-21 08：33</h3></span>-->
+
+    <!--</div>-->
+    <!--<div class="list list-inset">-->
+      <!--<a href="#" class="item item-thumbnail-left">-->
+        <!--<span class="circle-blue"></span>-->
+        <!--<h1 class="meeting">教学会议</h1>-->
+        <!--<h2>会议的详细内容</h2>-->
+      <!--</a>-->
+      <!--<span class="Mark"><button class="stateMark">完</button>-->
+      <!--<h3>优才学院 2017-03-21 08：33</h3></span>-->
+
+    <!--</div>-->
+    <!--<div class="list list-inset">-->
+      <!--<a href="#" class="item item-thumbnail-left">-->
+        <!--<span class="circle-blue"></span>-->
+        <!--<h1 class="meeting">教学会议</h1>-->
+        <!--<h2>会议的详细内容</h2>-->
+      <!--</a>-->
+      <!--<span class="Mark"><button class="stateMark">完</button>-->
+      <!--<h3>优才学院 2017-03-21 08：33</h3></span>-->
+
+    <!--</div>-->
+    <ion-list>
+      <ion-item ng-repeat="info in recoders track by $index" class="item-icon-left item-button-right"
+      href="#/tabs/recordersList/{{$index}}">
+
+        <span class="icon ion-ios-circle-filled assertive"></span>
+        <h2 ng-bind="info.title"></h2>
+        <p bg-bind="info.des"></p>
+        <button class="button button-clear button-energized">完成</button>
+        <p ng-bind="info.address"
+           ng-hide="info.address=='定位'"
+           class="recorder-width"></p>
+        <p ng-bind="info.alert_time" ng-show="info.alert_time"></p>
+        <ion-option-button class="button-assertive" ng-click="deleteItem(info)">删除</ion-option-button>
+
+      </ion-item>
+    </ion-list>
+
+
+  </ion-content>
+</ion-view>
+<!--<div class="bar bar-header bar-stable">-->
+  <!--<h1 class="title">bar-stable</h1>-->
+<!--</div>-->

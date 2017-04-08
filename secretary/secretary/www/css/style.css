@@ -1,0 +1,74 @@
+/* Empty. Add your own CSS if you like */
+.circle-blue{
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  background: #007aff;
+  z-index: 999;
+  display: block;
+  left: 3%;
+  top:45% ;
+  position: absolute;
+}
+.meeting{
+  font-size:1.2em;
+}
+.item-thumbnail-left{
+  padding-left: 3em;
+}
+.Mark{
+  width: 40%;
+  height: 100%;
+  right: 0%;
+  top:0%;
+  z-index: 999;
+  display: block;
+  position: absolute;
+
+}
+.Mark h3{
+  font-size: 0.8em;
+  bottom: 0em;
+  position: absolute;
+}
+.stateMark{
+  width: 3em;
+  height: 3em;
+  border-radius: 3em;
+  background: #007aff;
+
+  /*display: block;*/
+  right: 3%;
+  top:23% ;
+  position: absolute;
+  color: #ffffff;
+
+}
+/*.stateButton a{*/
+  /*margin:50% 50%;*/
+  /*color: #ffffff;*/
+  /*font-size: 2em;*/
+  /*margin-right: auto;*/
+  /*margin-left: auto;*/
+/*}*/
+
+.space-bottom{
+  margin-bottom:10px;
+}
+.recorder-address-width{
+  float:right;
+  font-size:0.6rem;
+}
+
+.recorder-address-time{
+  float:right;
+  width:30%;
+
+}
+
+.item-content{
+  margin-right:-5rem;
+}
+#showLocationMapView{
+  height: 10rem;
+}
